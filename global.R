@@ -3,7 +3,7 @@ library(dplyr)
 library(tidyr)
 library(ggplot2)
 
-setwd("~/Documents/Student Mental Health project/Student_MH_Viz")
+setwd("~/Desktop/Student-Mental-Health-R-Shiny")
 source('Preprocessing.R')
 
 

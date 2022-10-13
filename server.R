@@ -49,19 +49,7 @@ shinyServer(function(input, output) {
   output$TxPlot <- renderPlot({
     ggplot(data = mental_health()) + geom_bar(mapping = aes(x = CGPA, y = ..count../sum(..count..), fill = Treatment), position = "dodge") + labs(x = "Cumulative GPA", y = "Proportion", title = "Treatment by Cumulative GPA") 
   })
-    # generate bins based on input$bins from ui.R
-    # bins <- seq(min(x), max(x), length.out = input$bins + 1)
-    # draw the histogram with the specified number of bins
-    #    Student_MH %>%
-    #      filter(major == input$major & year == input$year & married == input$married & gender == input$gender) %>%
-    #     count() %>%
-    #     ggplot(aes(x = 'CGPA', y = n)) +
-    #     geom_col(fill = "lightblue") +
-    #     ggtitle("Cumulative GPA Distribution by Gender")
-    #
-
   
-  #})
   
   
 }  
